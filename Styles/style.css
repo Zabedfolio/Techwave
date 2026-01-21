@@ -184,6 +184,7 @@ hr{
     text-align: center;
     margin-top: 80px;
     gap: 80px;
+    
 }
 
 .card h1{
@@ -198,6 +199,79 @@ hr{
     color: white;
 }
 
+.choose{
+    background-color: #230E3D;
+}
+
+.choose-content{
+    padding: 100px 180px 100px 180px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.choose-header{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choose-box{
+    display: grid;
+    gap: 15px;
+    grid-template-columns:  repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.choose-box .choose-card{
+    width: 100%;
+    height: 100%;
+}
+
+.choose-card{
+    background-color: #35116540;
+    border-radius: 40px;
+}
+
+.row2{
+    grid-column: span 2;
+    grid-row: span 4;
+    /* padding: 100px 40px 0 40px; */
+    padding: 40px;
+}
+.column2{
+    grid-column: span 4;
+    grid-row: span 2;
+    padding: 40px;
+
+}
+.row1{
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 40px;
+}
+
+.choose-card{
+    color: white;
+    align-content: center;
+    line-height: 24px;
+    /* padding: 107px 40px 107px 40px; */
+}
+
+.choose-card img{
+    margin-bottom: 16px;
+}
+
+.choose-card h5{
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.choose-card p{
+    opacity: 0.6;
+}
 
 
 
@@ -270,7 +344,7 @@ header{
 .front{
     position: absolute;
     width: 50px;
-    height: 70px;
+    height: 80px;
 }
 
 .hero-header{
@@ -284,6 +358,7 @@ header{
 
 .about{
     padding: 40px 10px;
+    width: 90%;
 }
 
 .about-header h2{
@@ -297,6 +372,33 @@ header{
 
 .about-header{
     margin-bottom: 40px;
+}
+
+.about-card{
+    gap: 40px;
+}
+
+.choose-header{
+    font-size: 2.4rem;
+}
+
+.choose-box{
+    flex-direction: column;
+    grid-template-columns:  repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.choose-content{
+    padding: 40px 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row2,
+.column2,
+.row1{
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 
