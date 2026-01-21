@@ -10,6 +10,10 @@
   font-optical-sizing: auto;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
 header{
     width: 100%;
     background-color: #1A0B2E;
@@ -21,11 +25,10 @@ nav{
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 0 30px 0;
+    
 }
 
-nav .logo{
-    padding: 30px 0 30px 0;
-}
 
 nav ul{
     display: flex;
@@ -45,5 +48,175 @@ nav button{
     background: linear-gradient(106deg,#F7E93F, #FB09B4, #9100F8);
     border: none;
     font-weight: 600;
+    align-items: center;
+}
+
+.hero-banner{
+    background: url(../assets/hero-bg.png);
+    width: 100%;
+    padding: 101px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero-content{
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+
+.hero-circle-content{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    margin: 0 auto;
+}
+
+.back{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+}
+
+.hero-header{
+    text-align: center;
+    padding-top: 40px;
+    /* border: 1px solid white; */
+}
+
+.hero-text{
+    color: white;
+}
+
+.hero-text h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+}
+
+.hero-text p{
+    padding-top: 8px;
+    font-size: 1rem;
+}
+
+.badge{
+    position: absolute;
+    background-color: #00FF88;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 8px 16px;
+    color: #1A0B2E;
+    border-radius: 1000px;
+    box-shadow: 0 3px 27px 0 #00ff8850;
+    top: 5%;
+    left: 70%;
+}
+.hero-btn{
+    gap: 8px;
+    padding-top: 24px;
+}
+.spotify-btn{
+    
+    color: white;
+    border-radius: 100000px;
+    background: linear-gradient(106deg,#F7E93F, #FB09B4, #9100F8);
+    border: none;
+    font-weight: 600;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.subs-btn{
+    color: #00FF88;
+    background: transparent;
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+    padding: 12px 20px;
+
+}
+
+
+
+@media screen and (max-width: 576px){
+    
+    .hide-mobile{
+    display: none;
+}
+
+.hamburger-menu{
+    display: block;
+}
+
+header{
+        /* max-width: 600px; */
+        width: 100%;
+        
+    }
+
+    nav{
+    width: 100%;
+    padding: 30px 20px 30px 20px;
+    
+}
+
+.hamburger-menu img{
+    width: 24px;
+}
+
+.hero-banner{
+    width: 100%;
+    background: url(../assets/Image.png);
+    /* border: 1px solid rgb(255, 5, 5); */
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.hero-content{
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+
+.hero-circle-content{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front{
+    position: absolute;
+    width: 50px;
+    height: 70px;
+}
+
+.hero-header{
+    padding-top: 30px;
+    /* border: 1px solid white; */
+}
+
+.badge{
+    font-size: 0.8rem;
+}
+
+
+
 }
 
