@@ -4,6 +4,35 @@
     box-sizing: border-box;
 }
 
+.ani-btn{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ani-btn:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 18px #00ff8870;
+}
+
+.ani-img{
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.ani-img2{
+    animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes breathe{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
 
 .font-inter {
   font-family: "Inter", sans-serif;
@@ -39,6 +68,10 @@ nav li{
     color: white;
     text-decoration: none;
     list-style-type: none;
+}
+
+nav li:hover{
+    text-decoration: wavy underline;
 }
 
 nav button{
@@ -146,6 +179,8 @@ nav button{
     padding: 12px 20px;
 
 }
+
+
 
 .about-podcast{
     background-color: #1A0B2E;
